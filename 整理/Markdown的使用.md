@@ -45,6 +45,129 @@ GOOGLE.COM
 
 # 脚注
 
-创建脚注格式类似这样 [^要注明的文本]  
-[^要注明的文本]: 文本内容
+创建脚注格式类似这样[^1]
 
+[^1]: This is my first footnote  
+[^2]: Visit http://ghost.org  
+[^3]: A final footnote
+
+# 列表
+
+* 第一项
+* 第二项
++ 第一项
++ 第二项
+- 第一项
+- 第二项
+
+1. 第一项
+2. 第二项
+
+1. 第一项：
+    - 第一个元素
+    - 第二个元素
+2. 第二项：
+    - 第一个元素
+    - 第二个元素
+
+# 区块
+
+> 区块  
+> 区块  
+> 区块
+
+---
+
+> 最外层
+> > 第一层嵌套
+> > > 第二层嵌套
+
+---
+
+> 区块中使用列表
+> 1. 一
+> + 一
+
+---
+
+* 一
+    > 列表中使用区块  
+    > 列表中使用区块
+* 二
+
+# 代码
+
+例如 `echo()` 方法
+
+例如 `javascript` 代码块：
+```javascript
+$(document).ready(function () {
+    alert('RUNOOB');
+});
+```
+
+# 链接
+
+博客链接: [Tabll](https://www.tabll.cn)
+
+
+链接也可以用变量来代替，文档末尾附带变量地址：  
+这个链接用 1 作为网址变量 [Google][1]  
+然后在文档的结尾为变量赋值（网址）
+
+[1]: http://www.google.com/
+
+# 图片
+
+![图片](https://laravel.com/assets/img/laravel-logo.png)
+
+同时也支持网址变量 ![RUNOOB][2]
+
+[2]: https://laravel.com/assets/img/laravel-logo.png
+
+使用HTML代码设置图片的长宽等
+<img src="https://laravel.com/assets/img/laravel-logo.png" width="5%">
+
+# 表格
+
+|  表头   | 表头  |
+|  ----  | ----  |
+| 单元格  | 单元格 |
+| 单元格  | 单元格 |
+
+对齐语法：
+| 左对齐 | 右对齐 | 居中对齐 |
+| :-----| ----: | :----: |
+| 单元格格格 | 单元格格格 | 单元格格格 |
+| 单元格 | 单元格 | 单元格 |
+
+# HTML用法
+
+使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>A</kbd> 截图
+
+# 转义
+
+在前面添加 `\` 以正常显示
+|符号|说明|
+|----|:----:|
+|\\|反斜线|
+|\`|反引号|
+|\*|星号|
+|\_|下划线|
+|\{\}|花括号|
+|\[\]|方括号|
+|\(\)|小括号|
+|\#|井字号|
+|\+|加号|
+|\-|减号|
+|\.|英文句点|
+|\!|感叹号|
+
+# 公式
+$$
+\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix} 
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+\frac{\partial X}{\partial u} &  \frac{\partial Y}{\partial u} & 0 \\
+\frac{\partial X}{\partial v} &  \frac{\partial Y}{\partial v} & 0 \\
+\end{vmatrix}
+$$
