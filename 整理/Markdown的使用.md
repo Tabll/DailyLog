@@ -212,6 +212,8 @@ Content in the first column | Content in the second column
 
 在 `Markdown All in one` 插件中自动对齐表格使用快捷键 `Alt` + `Shift` + `F`
 
+自定义表格样式：
+https://www.imydl.tech/ty/70.html
 ## HTML用法
 
 使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>A</kbd> 截图
