@@ -1,19 +1,17 @@
 # Laravel 测试 - 数据库测试
 
 ## 简介
-Laravel 提供了多种有用的工具来让你更容易的测试使用数据库的应用程序。首先，你可以使用 assertDatabaseHas 辅助函数，来断言数据库中是否存在与指定条件互相匹配的数据。举例来说，如果我们想验证 users 数据表中是否存在 email 值为 sally@example.com 的数据，我们可以按照以下的方式来做测试：
+Laravel 提供了多种有用的工具来让你更容易的测试使用数据库的应用程序。首先，你可以使用 assertDatabaseHas 辅助函数，来断言数据库中是否存在与指定条件互相匹配的数据。举例来说，如果我们想验证 users 数据表中是否存在 email 值为 www@example.cn 的数据，我们可以按照以下的方式来做测试：
 
 ```php
 public function testDatabase()
 {
     // 创建调用至应用程序...
-
     $this->assertDatabaseHas('users', [
-        'email' => 'sally@example.com'
+        'email' => 'www@example.cn'
     ]);
 }
 ```
-
 
 你也可以使用 assertDatabaseMissing 辅助函数来断言数据不在数据库中。
 
@@ -24,9 +22,7 @@ public function testDatabase()
 
 ```php
 <?php
-
 namespace Tests\Feature;
-
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithoutMiddleware;
@@ -34,16 +30,13 @@ use Illuminate\Foundation\Testing\WithoutMiddleware;
 class ExampleTest extends TestCase
 {
     use RefreshDatabase;
-
     /**
-     * 一个基本的功能测试示例。
-     *
+     * 测试示例。
      * @return void
      */
     public function testBasicExample()
     {
         $response = $this->get('/');
-
         // ...
     }
 }
